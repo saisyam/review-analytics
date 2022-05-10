@@ -9,10 +9,30 @@ This project use `docker` for all the above three components and use `docker-com
 
 
 # Frontend
-TBD
+Setup svelte project using following commands:
+
+```shell
+$ npx degit sveltejs/template frontend
+$ cd frontend
+$ npm install
+$ npm run dev
+```
 
 # Backend
-TBD
+Setup virtual environment using the following command:
+
+```shell
+$ cd backend
+$ python3 -m venv .venv --prompt backend
+$ source ./venv/bin/activate
+$ pip install pip --upgrade
+$ pip install -r requirements.txt
+```
+To run the application use the following command:
+
+```shell
+uvicorn main:app --reload
+```
 
 # MongoDB
 TBD
